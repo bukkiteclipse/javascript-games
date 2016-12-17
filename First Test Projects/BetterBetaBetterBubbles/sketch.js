@@ -39,7 +39,7 @@ function setup() {
 function draw() {
   if(!lost)
   {
-    //playBackgroundMusic();    sss
+    playBackgroundMusic();  
   }
   
   if(backgroundShade > 0)
@@ -101,7 +101,7 @@ function draw() {
         print(playSpeed + " os: "+ overallSpeed +" speed: " + bubbles[i].speed);
       }
       
-      /* if(bubbles[i].playSound)    sss
+       if(bubbles[i].playSound)
       {
         if(lost)
         {
@@ -109,7 +109,7 @@ function draw() {
         } else{
           bubbles[i].playBounceSound(bounceSound);
         }
-      } */
+      } 
       
       bubbles[i].move();
       bubbles[i].display();
@@ -206,9 +206,9 @@ function handleBubbleMouseCollision() {
         if(!lost)
         {
           lost = true;
-          //song.pause();
-          //lostSound.play(); sss
-          //lostMusic.play();
+          song.pause();
+          lostSound.play();
+          lostMusic.play();
           lostScore = score;
         }
       }
