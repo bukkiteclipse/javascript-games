@@ -19,14 +19,14 @@ var bounceSound;
 
 var scoreBonusTextSize = 60;
 
-/* function preload() {
+ function preload() {
   song = loadSound('assets//sounds/LOOP2_140BPM.mp3');
   bounceSound = loadSound('assets//sounds/pop.mp3');
   bounceSound2 = loadSound('assets//sounds/pop2.mp3');
   lostSound = loadSound('assets//sounds/lost_sound.mp3');
   lostMusic = loadSound('assets//sounds/lost_atmos.mp3');
   
-} */
+}
 
 function setup() {
   createCanvas(1900,920);
